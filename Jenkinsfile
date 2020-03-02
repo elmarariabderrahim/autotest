@@ -12,7 +12,7 @@ pipeline {
              
             }
         }
-        stage('Clone') {
+        stage('ApplyScripts') {
             steps {
                 sh './runshsc.sh'
             }

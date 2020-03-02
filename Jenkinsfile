@@ -14,7 +14,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './runshsc.sh'
+                sh 'https://github.com/elmarariabderrahim/autotest/blob/master/runshsc.sh'
             }
         }
         stage('Import') {

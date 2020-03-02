@@ -1,4 +1,4 @@
-input="https://github.com/elmarariabderrahim/autotest/blob/master/texx.txt"
+input="./texx.txt"
 varrr=""
 while IFS= read -r line
 do

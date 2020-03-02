@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                sh 'sudo mysqldump -uroot -pHGKO$.xu1234 db1 > /home/soprano/Desktop/Tests/shell/cloneddb111.sql' 
+                //sh 'mysql -P 32768 --protocol=tcp -uroot -pHGKO$.xu1234 -Bse "use db2; select * from Persons;"' 
+                sh './runshsc.sh'
              
             }
         }

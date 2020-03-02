@@ -1,0 +1,4 @@
+show databases;
+use db2;
+insert into Persons values (8, 'test8', 'test8', 'test8', 'test8');
+select * from Persons;

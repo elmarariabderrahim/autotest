@@ -2,7 +2,10 @@ pipeline {
     agent any
     stages {
         stage('Build') {
-        sh 'Heelo'
+            steps{
+            sh 'Heelo'
+            }
+        
         }
     }
 }

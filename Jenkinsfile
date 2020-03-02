@@ -4,7 +4,5 @@ pipeline {
         stage('Build') {
         sh 'Heelo'
         }
-        stage('Test') { 
-        }
     }
 }

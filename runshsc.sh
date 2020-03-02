@@ -1,5 +1,5 @@
 #!/bin/bash
-input="./texx.txt"
+input="https://github.com/elmarariabderrahim/autotest/blob/master/texx.txt"
 varrr=""
 while IFS= read -r line
 do

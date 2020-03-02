@@ -1,5 +1,5 @@
 #!/bin/bash
-input="/home/soprano/Desktop/Tests/shell/TEST1/texx.txt"
+input="./texx.txt"
 varrr=""
 while IFS= read -r line
 do

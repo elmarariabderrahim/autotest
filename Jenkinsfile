@@ -17,7 +17,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './runshsc.sh texx.sql'
+                sh './runshsc.sh'
             }
         }
         stage('Import') {

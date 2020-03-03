@@ -14,7 +14,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './home/soprano/Desktop/Tests/shell/TEST1/runshsc.sh'
+                sh './runshsc.sh'
             }
         }
         stage('Import') {

@@ -1,4 +1,5 @@
-input="$1"
+script_name=$1
+input="./script_naame"
 varrr=""
 while IFS= read -r line
 do

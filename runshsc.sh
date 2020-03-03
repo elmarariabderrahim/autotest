@@ -1,5 +1,4 @@
 script_name=$1
-echo $1
 input="$script_name"
 varrr=""
 while IFS= read -r line

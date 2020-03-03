@@ -1,4 +1,4 @@
-input="./texx.sql"
+input=$1
 varrr=""
 while IFS= read -r line
 do

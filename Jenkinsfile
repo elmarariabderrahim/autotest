@@ -17,7 +17,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './runshsc.sh'
+                sh './runshsc.sh ${JOB_NAME}'
             }
         }
         stage('Import') {

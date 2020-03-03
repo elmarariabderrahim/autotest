@@ -1,3 +1,4 @@
+echo $1
 input="./texx.txt"
 varrr=""
 while IFS= read -r line

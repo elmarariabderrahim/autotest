@@ -1,5 +1,5 @@
 for f in sql_scripts/*; do
-input="./sql_scripts/$f"
+input="./$f"
 varrr=""
 while IFS= read -r line
 do

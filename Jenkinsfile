@@ -14,7 +14,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './runshsc.sh'
+                sh 'sudo ./runshsc.sh'
             }
         }
         stage('Import') {

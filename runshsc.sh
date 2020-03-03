@@ -1,4 +1,3 @@
-echo "$1<br><br>$1$1<br>$1"
 input="./texx.txt"
 varrr=""
 while IFS= read -r line

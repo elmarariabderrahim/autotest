@@ -1,4 +1,4 @@
-for f in sql_scripts do
+for f in sql_scripts; do
 input="./sql_scripts/$f"
 varrr=""
 while IFS= read -r line

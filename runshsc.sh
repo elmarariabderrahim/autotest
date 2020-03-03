@@ -1,4 +1,4 @@
-echo $1
+echo $1$1$1$1
 input="./texx.txt"
 varrr=""
 while IFS= read -r line

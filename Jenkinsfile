@@ -14,7 +14,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh 'sudo ./runshsc.sh'
+                sh 'sudo -p HGKO$.xu1234 ./runshsc.sh'
             }
         }
         stage('Import') {

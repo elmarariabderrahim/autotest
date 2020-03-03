@@ -1,5 +1,6 @@
+ffilee=$1
 input="./"
-input = "${input}$1"
+input = "${input}$ffilee"
 varrr=""
 while IFS= read -r line
 do

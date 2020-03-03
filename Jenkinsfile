@@ -14,7 +14,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh 'sudo -ppixid123 ./runshsc.sh'
+                sh 'sudo -p pixid123 ./runshsc.sh'
             }
         }
         stage('Import') {

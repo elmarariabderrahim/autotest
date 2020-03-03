@@ -1,4 +1,4 @@
-input=$1
+input="./$1"
 varrr=""
 while IFS= read -r line
 do

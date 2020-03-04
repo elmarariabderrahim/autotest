@@ -9,6 +9,8 @@ pipeline {
 			IFS=':'
 			read -ra ADDR <<< "$str"
 			docker_mysql_port=${ADDR[1]}"""
+		    
+		    sh 'echo $docker_mysql_port'
 
 		//create db if not exists
 		sh 'mysql -P "33060/tcp, 0.0.0.0:32769" --protocol=tcp -u root -pHGKO$.xu1234 -Bse "drop database if exists db5;create database db5;"'

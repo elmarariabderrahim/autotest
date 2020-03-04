@@ -9,7 +9,8 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-		    echo '' 
+		    sh 'chmod 777 ./appy_scripts_mysqlDB.sh'
+		    sh './appy_scripts_mysqlDB.sh' 
             }
         }
         stage('Import') {

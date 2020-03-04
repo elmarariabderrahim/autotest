@@ -4,7 +4,7 @@ pipeline {
         stage('Create') {
             steps {
 		    sh 'chmod 777 ./runshsc.sh'
-		    sh 'chmod 777 /var/run/docker.sock'
+		    sh 'sudo chmod 777 /var/run/docker.sock'
 		//create db if not exists
 		sh 'mysql -P 32768 --protocol=tcp -u root -pHGKO$.xu1234 -Bse "create database db5;"'
 		

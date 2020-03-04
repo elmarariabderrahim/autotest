@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Create') {
             steps {
-		    sh 'chmod 777 ./runshsc.sh'
-		    sh 'chmod 777 ./used_docker_port.sh'
-			sh './used_docker_port.sh'
+		    
+		    sh 'chmod 777 ./init_apply.sh'
+			sh './init_apply.sh'
 
 		//create db if not exists
 		/*sh 'mysql -P "33060/tcp, 0.0.0.0:32769" --protocol=tcp -u root -pHGKO$.xu1234 -Bse "drop database if exists db5;create database db5;"'
@@ -20,7 +20,8 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-                sh './runshsc.sh'
+		    echo 'Hello world!' 
+                //sh './runshsc.sh'
             }
         }
         stage('Import') {

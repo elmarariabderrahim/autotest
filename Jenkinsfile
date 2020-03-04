@@ -5,6 +5,11 @@ pipeline {
             steps {
 		    sh 'chmod 777 ./runshsc.sh'
 		   
+		sh """str=$(docker port test-mysql)
+			IFS=':'
+			read -ra ADDR <<< "$str"
+			docker_mysql_port=${ADDR[1]}"""
+
 		//create db if not exists
 		sh 'mysql -P "33060/tcp, 0.0.0.0:32769" --protocol=tcp -u root -pHGKO$.xu1234 -Bse "drop database if exists db5;create database db5;"'
 		

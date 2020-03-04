@@ -5,15 +5,7 @@ pipeline {
             steps {
 		    sh 'chmod 777 ./init_apply.sh'
 		    sh './init_apply.sh'
-		    script {
-            def logContent = Jenkins.getInstance()
-                .getItemByFullName(env.JOB_NAME)
-                .getBuildByNumber(
-                    Integer.parseInt(env.BUILD_NUMBER))
-                .logFile.text
-            // copy the log in the job's own workspace
-            writeFile file: "buildlog.txt", text: logContent
-        }
+		    
             }
         }
         stage('ApplyScripts') {
@@ -28,5 +20,10 @@ pipeline {
 		    echo 'Hello world!' 
             }
         }
+    }
+    post {
+	    always { 
+		    echo 'I will always say Hello again!'
+	    }
     }
 }

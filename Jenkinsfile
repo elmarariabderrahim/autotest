@@ -9,7 +9,7 @@ pipeline {
         }
         stage('ApplyScripts') {
             steps {
-		    echo 'Hello world!' 
+		    echo '' 
             }
         }
         stage('Import') {

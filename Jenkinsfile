@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('init') {
             steps {
+		    sh 'pwd'
 		    sh 'chmod 777 ./init_apply.sh'
 		    sh 'chmod 777 ./clonedb.sh'
 		    sh './clonedb.sh'
